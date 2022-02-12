@@ -7,10 +7,15 @@
     --primary-color:rgb(192, 156, 103);
     --secondary-color:rgb(168, 144, 128);
     --white:#fff;
+    --white-smoke:whitesmoke;
+    --black:black;
     --gray-200:lightgray;
     --gray-500:gray;
     --gray-900:darkgray;
     --blue-600:blue;
+    --blue-200:skyblue;
+    --footer-card-bg:rgb(205, 206, 189);
+    --cart-badge-bg:rgb(199, 166, 150);
 }
 button{
     cursor: pointer;
@@ -28,6 +33,7 @@ ul,ol{
     display: flex;
     background-color: var(--secondary-color);
     justify-content: space-between;
+    padding: .5rem;
 }
 .side-nav-section{
     display: flex;
@@ -69,4 +75,10 @@ ul,ol{
     position: absolute;
     left: 1.3rem;
     top: -1rem;
+}
+
+@media screen and (max-width:510px){
+    .search-bar{
+        display: none;
+    }
 }
