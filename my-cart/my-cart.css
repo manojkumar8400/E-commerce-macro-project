@@ -78,11 +78,12 @@
     flex-direction: column;
     background-color: sienna;
     width: 22rem;
-    /* height: 70vh; */
 }
+
 .hr-line {
     margin: 1rem 0;
 }
+
 .item-price {
     display: flex;
     justify-content: space-between;
@@ -102,14 +103,17 @@
     margin: .6rem 0;
     font-size: 1.2rem;
 }
-.delivery-charges-price{
+
+.delivery-charges-price {
     margin-top: .3rem;
 }
+
 .total-amt {
     display: flex;
     justify-content: space-between;
 }
-.footer{
+
+.footer {
     height: 8vh;
     display: flex;
     flex-direction: column;
@@ -117,33 +121,34 @@
 .save-money{
     font-size: 1.2rem;
 }
-.place-order{
+
+.place-order {
     font-size: 1.1rem;
     font-weight: bold;
 }
-@media screen and (max-width:757px){
-    html{
+
+@media screen and (max-width:757px) {
+    html {
         font-size: 14px;
     }
-    .my-cart-detail{
+    .my-cart-detail {
         padding:.5rem;
      }
 }
-@media screen and (max-width:550px){
-    html{
+
+@media screen and (max-width:550px) {
+    html {
         font-size: 11px;
     }
-    .remove-btn{
+    .remove-btn {
         margin: .5rem 0;
         padding: .2rem;   
         font-size: 11px;
     }
-    .wishlist-btn{
+    .wishlist-btn {
             padding: .2rem;
             font-size: 11px;
     }
-    .my-cart-detail{
+    .my-cart-detail {
        padding:.5rem;
     }
-    .price-detail{
-}
