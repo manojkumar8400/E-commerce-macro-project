@@ -1,0 +1,154 @@
+@import "/common.css";
+
+.body-container{    
+    display: flex;
+    align-items: center;
+    margin-top: 7rem;
+    justify-content: center;
+}
+
+
+.my-cart-2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/*          Page Layout */
+
+.product-detail {
+    display: flex;
+    gap: 10px;
+    width: 50rem;
+}
+
+.nikon-img {
+    width: 40%;
+}
+
+.my-cart-detail{
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3rem;
+}
+.pro-title{
+    font-size: 1.2rem;
+}
+.real-dis-price{
+    display: flex;
+    align-content: flex-end;
+    margin: 1rem 0;
+}
+.pro-real-price{
+    text-decoration: line-through;
+    margin: .4rem 0 0 .9rem;
+}
+.quantity-cont{
+    width: 8rem;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.quan-btn{
+    font-size: 1.5rem;
+    background-color: skyblue;
+    border: none;
+}
+.remove-wish-btn{
+    display: flex;
+    flex-direction: column;
+}
+.remove-btn{
+    margin: 1rem 0;
+    padding: .5rem;   
+}
+.wishlist-btn{
+        padding: .5rem;
+}
+
+/*      Price Detail  */
+
+.price-detail{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: sienna;
+    width: 22rem;
+}
+
+.hr-line {
+    margin: 1rem 0;
+}
+
+.item-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.discount-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.delivery-charges {
+    display: flex;
+    justify-content: space-between;
+    margin: .6rem 0;
+    font-size: 1.2rem;
+}
+
+.delivery-charges-price {
+    margin-top: .3rem;
+}
+
+.total-amt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+}
+.save-money{
+    font-size: 1.2rem;
+}
+
+.place-order {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:757px) {
+    html {
+        font-size: 14px;
+    }
+    .my-cart-detail {
+        padding:.5rem;
+     }
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 11px;
+    }
+    .remove-btn {
+        margin: .5rem 0;
+        padding: .2rem;   
+        font-size: 11px;
+    }
+    .wishlist-btn {
+            padding: .2rem;
+            font-size: 11px;
+    }
+    .my-cart-detail {
+       padding:.5rem;
+    }
