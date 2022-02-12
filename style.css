@@ -80,7 +80,7 @@
 
 .c-container {
     display: flex;
-    background-color: rgb(205, 206, 189);
+    background-color: var(--footer-container);
     width: 30rem;
     padding: .5rem;
     flex-grow: 1;

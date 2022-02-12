@@ -6,6 +6,8 @@
 :root{
     --primary-color:rgb(192, 156, 103);
     --secondary-color:rgb(168, 144, 128);
+    --footer-container:rgb(205, 206, 189);
+    --detail-cart:rgb(164, 155, 170);
     --white:#fff;
     --gray-200:lightgray;
     --gray-500:gray;
@@ -28,6 +30,7 @@ ul,ol{
     display: flex;
     background-color: var(--secondary-color);
     justify-content: space-between;
+    padding: .7rem;
 }
 .side-nav-section{
     display: flex;
@@ -69,4 +72,10 @@ ul,ol{
     position: absolute;
     left: 1.3rem;
     top: -1rem;
+}
+
+@media screen and (max-width:570px){
+    .search-bar{
+        display: none;
+    }
 }

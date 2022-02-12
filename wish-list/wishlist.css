@@ -1,0 +1,70 @@
+@import "/common.css";
+
+.my-wishlist {
+    margin: 3.4rem 0px;
+    text-align: center;
+}
+
+.items-wishlist {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1.8rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.wishlist {
+    position: relative;
+    background-color: var(--white-smoke);
+}
+
+.camera-image {
+    height: 20rem;
+    width: 18.5rem;
+}
+
+.camera-image:hover {
+    width: 20rem;
+    height: 22rem;
+    transition: .8s;
+}
+
+.move-to-cart {
+    padding: .5rem 6.7rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.move-to-cart:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transition: .7s;
+}
+
+.price-wishlist {
+    text-align: center;
+    margin: .6rem 0;
+}
+i
+.camera-title {
+    text-align: center;
+    margin-top: .6rem;
+}
+
+.heart-symbol {
+    font-size: 1.2rem;
+    padding: .3rem;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    position: absolute;
+    top: .5rem;
+    right: .8rem;
+}
+
+@media screen and (max-width:510px) {
+    .my-wishlist {
+        margin: 2.4rem 0px;
+        font-size: 25px;
+    }
+}
