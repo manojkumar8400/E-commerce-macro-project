@@ -1,0 +1,156 @@
+@import "/common.css";
+@import "/wish-list/wishlist.css";
+
+:root {
+    --txt-margin: 2rem 0 1rem 0;
+    --txt-font-size: 1.2rem;
+    --red-900: red;
+    --main-body: rgb(247, 240, 240)
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 15% 83%;
+    grid-gap: 15px;
+}
+
+/*      Side filter bar */
+
+.side-bar {
+    padding: .8rem;
+}
+
+.filter-clear {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.filter-price {
+    display: flex;
+    justify-content: space-between;
+    color: var(--detail-cart);
+    margin: 1rem 0 .5rem 0;
+}
+
+.slide-container {
+    margin-top: 1rem;
+}
+
+.slider {
+    width: 100%;
+    cursor: pointer;
+}
+
+.category-txt {
+    margin: var(--txt-margin);
+}
+
+.category-choice {
+    font-size: var(--txt-font-size);
+}
+
+.category-checkbox {
+    width: .9rem;
+    height: .9rem;
+    margin-right: .5rem;
+}
+
+.rating-txt {
+    margin: var(--txt-margin);
+}
+
+.rating-choose {
+    font-size: var(--txt-font-size);
+}
+
+.sort-by-txt {
+    margin: var(--txt-margin);
+}
+
+.sort-by {
+    font-size: var(--txt-font-size);
+}
+
+/*      main page */
+
+.items-wishlist {
+    background-color: var(--main-body);
+    padding-bottom: 1rem;
+}
+
+.product-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.camera-images {
+    height: 20rem;
+    width: 18.5rem;
+}
+
+.camera-images:hover {
+    box-shadow: 10px 10px 5px var(--gray-500);
+    transition: .5s;
+}
+
+.heart-symbol {
+    background-color: var(--gray-500);
+
+}
+
+.hear-bt {
+    border-radius: 50%;
+    padding: 4px 5px 0 5px;
+    font-size: 1.5rem;
+    color: var(--white);
+    border: none;
+    background-color: var(--gray-500);
+}
+
+.hear-bt:focus {
+    color: var(--red-900);
+}
+
+@media screen and (max-width:985px) {
+    .heart-symbol {
+        position: absolute;
+        left: 13rem;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .wishlist {
+        width: 16.5rem;
+    }
+
+    .move-to-cart {
+        font-size: 14px;
+        width: 112%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    html {
+        font-size: 13px;
+    }
+
+    .move-to-cart {
+        font-size: 13px;
+        width: 110%;
+    }
+
+    .wishlist {
+        width: 15.5rem;
+    }
+}
+
+@media screen and (max-width:544px) {
+    .move-to-cart {
+        width: 120%;
+    }
+}
