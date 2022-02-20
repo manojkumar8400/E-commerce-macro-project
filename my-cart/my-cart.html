@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/my-cart/my-cart.css">
     <title>my wishlist</title>
 </head>
@@ -16,15 +17,15 @@
                 <a class="title" href="/index.html">neon camera</a>
                 <input class="search-bar" type="text" placeholder="&#128269; Search">
                 <ul class="side-nav-section">
-                    <li><button class="login-btn"><a href="">Logout</a></button></li>
-                    <li><a class="wishlist-btn btn" href="/wish-list/wish-list.html">❤️<span
-                                class="badges-wishlist">5</span></a></li>
-                    <li><a class="add-cart-btn btn" href="/my-cart/my-cart.html"> &#128722; <span
-                                class="badge-wishlist">2</span></a></li>
+                    <li><button class="login-btn"><a href="/index.html">Logout</a></button></li>
+                    <li><a class="wishlist-btn btn" href="/wish-list/wish-list.html"><i class="fa fa-heart-o"></i><span
+                                class="badge-wishlist">5</span></a></li>
+                    <li><a class="add-cart-btn btn" href="/my-cart/my-cart.html"><i
+                                class="	fa fa-shopping-cart"></i><span class="badge-wishlist">2</span></a></li>
                 </ul>
             </nav>
         </header>
-        <h2 class="my-cart-2">MY CART (2)</h2>
+        <h2 class="my-cart-txt">MY CART</h2>
         <div class="body-container">
             <div class="product-detail">
                 <img class=" nikon-img" src="/my-cart/cart-1.jpg" alt="it's blazzer image">
@@ -43,7 +44,7 @@
                     </section>
                     <section class="remove-wish-btn">
                         <button class="remove-btn">Remove From Cart</button>
-                        <button class="wishlist-btn">Move To Wishlist</button>
+                        <button class="move-wishlist-btn">Move To Wishlist</button>
                     </section>
                 </div>
             </div>
@@ -70,10 +71,9 @@
                 <hr class="hr-line">
                 <section class="footer">
                     <p class="save-money">You will save ₹2999 on this order</p>
-                    <button class="place-order">PLACE ORDER</button>
+                    <button class="place-order-btn">PLACE ORDER</button>
                 </section>
             </div>
-
         </div>
     </div>
 </body>

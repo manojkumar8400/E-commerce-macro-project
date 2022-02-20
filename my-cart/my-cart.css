@@ -1,39 +1,29 @@
 @import "/common.css";
 
-.badges-wishlist {
-    font-size: 1.1rem;
-    background-color: var(--blue-600);
-    padding: .2rem .4rem;
-    color: var(--white);
-    border-radius: 50%;
-    position: absolute;
-    left: 1.9rem;
-    top: -.6rem;
+.my-cart-txt {
+    text-align: center;
+    margin: 2rem 0;
 }
 
 .body-container {
     display: flex;
     align-items: center;
-    margin-top: 7rem;
+    height: 90vh;
     justify-content: space-evenly;
-}
-
-
-.my-cart-2 {
-    text-align: center;
-    margin: 2rem 0;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 
 .product-detail {
     display: flex;
     gap: 10px;
-    width: 50rem;
+    width: 40rem;
+    height: 21rem;
     justify-content: center;
 }
 
 .product-detail:hover {
-    width: 53rem;
-    height: 24rem;
+    box-shadow: 10px 10px 15px var(--gray-500);
     transition: .7s;
     color: var(--white);
 }
@@ -87,13 +77,11 @@
 
 .remove-btn {
     margin: 1rem 0;
-    padding: .5rem;
-    font-weight: bold;
+    padding: .4rem;
 }
 
-.wishlist-btn {
-    padding: .5rem;
-    font-weight: bold;
+.move-wishlist-btn {
+    padding: .4rem;
 }
 
 /*      Price Detail  */
@@ -107,9 +95,8 @@
 }
 
 .price-detail:hover {
-    width: 24rem;
-    height: 24rem;
     transition: .7s;
+    box-shadow: 10px 10px 10px var(--gray-500);
     color: var(--white);
 }
 
@@ -156,9 +143,14 @@
     font-size: 1.2rem;
 }
 
-.place-order {
-    font-size: 1.1rem;
-    font-weight: bold;
+.place-order-btn {
+    padding: .4rem;
+}
+
+@media screen and (max-width:1246px) {
+    html {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width:757px) {
@@ -179,15 +171,11 @@
     .remove-btn {
         margin: .5rem 0;
         padding: .2rem;
-        font-size: 11px;
+        font-size: 14px;
     }
 
-    .wishlist-btn {
+    .move-wishlist-btn {
         padding: .2rem;
-        font-size: 11px;
-    }
-
-    .my-cart-detail {
-        padding: .5rem;
+        font-size: 14px;
     }
 }
